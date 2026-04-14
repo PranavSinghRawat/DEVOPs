@@ -21,11 +21,11 @@ jobs:
 
     - name: Install Dependencies
       run: npm install
-      working-directory: Assignment_1_CICD_Pipeline/webapp
+      working-directory: assignment1/webapp
 
     - name: Run Tests (Linting/Mock Tests)
       run: npm test
-      working-directory: Assignment_1_CICD_Pipeline/webapp
+      working-directory: assignment1/webapp
 
     - name: Simulation of Build
       run: echo "Building the application artifacts..."
