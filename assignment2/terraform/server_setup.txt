@@ -1,0 +1,3 @@
+Server Name: DevOps-Assignment-2
+Environment: Production
+Status: Initialized by Terraform
