@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 
 app.get('/', (req, res) => {
-  res.send('<h1>DevOps Assignment 1: CI/CD Pipeline</h1><p>Status: Successfully Deployed!</p>');
+  res.send('<h1>DevOps prac Assignment 1: CI/CD Pipeline</h1><p>Status: Successfully Deployed!</p>');
 });
 
 if (require.main === module) {
