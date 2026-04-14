@@ -1,0 +1,26 @@
+---
+# Simple Ansible Playbook to demonstrate Configuration Management
+- name: Setup Web Server
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Ensure a directory for web content exists
+      file:
+        path: ./site_content
+        state: directory
+
+    - name: Create a basic index.html file
+      copy:
+        dest: ./site_content/index.html
+        content: |
+          <html>
+          <head><title>Ansible Managed Site</title></head>
+          <body>
+            <h1>Managed by Ansible</h1>
+            <p>This server configuration was automated using an Ansible Playbook.</p>
+          </body>
+          </html>
+
+    - name: Display a success message
+      debug:
+        msg: "The web content has been successfully prepared by Ansible!"
