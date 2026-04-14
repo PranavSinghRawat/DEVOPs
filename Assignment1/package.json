@@ -1,0 +1,11 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm run build --production",
+    "start": "npm start"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
